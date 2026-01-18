@@ -6,8 +6,11 @@ for attempt in range(1,attempts+1):
     if guess==number:
         print("Ура! Вы угадали")
         break
+    if guess < number:
+        print(f"Не угадали. Загаданное число БОЛЬШЕ {guess}")
     else:
-        print("Не угадали")
+        print(f"Не угадали. Загаданное число МЕНЬШЕ {guess}")
 else:
     print(f"К сожалению, Вы проиграли. Загаданное число: {number}")
+
 
